@@ -1,0 +1,238 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b67d8dd830bed1e46a90dffa5e80609a, type: 3}
+  m_Name: Level 35
+  m_EditorClassIdentifier: 
+  ballCount: 44
+  layers:
+  - rotationSpeed: 400
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    curveSpeedDivider: 10
+    blocks:
+    - hitpoint: 1
+      color: {r: 0, g: 1, b: 0.5850754, a: 1}
+      startAngle: 0
+      angle: 120
+    - hitpoint: 1
+      color: {r: 0, g: 1, b: 0.5850754, a: 1}
+      startAngle: 180
+      angle: 120
+  - rotationSpeed: 100
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    curveSpeedDivider: 10
+    blocks:
+    - hitpoint: 1
+      color: {r: 1, g: 0, b: 0.6922989, a: 1}
+      startAngle: 0
+      angle: 180
+    - hitpoint: 1
+      color: {r: 1, g: 0.8467263, b: 0, a: 1}
+      startAngle: 180
+      angle: 180
+  - rotationSpeed: 100
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.0041656494
+        value: 0.50471115
+        inSlope: 0.97662413
+        outSlope: 0.97662413
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.5124911
+        value: 1.0011541
+        inSlope: -0.030128896
+        outSlope: -0.030128896
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.9958191
+        value: 0.5
+        inSlope: -1.0368819
+        outSlope: -1.0368819
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    curveSpeedDivider: 20
+    blocks:
+    - hitpoint: 0
+      color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      startAngle: 0
+      angle: 90
+    - hitpoint: 3
+      color: {r: 0.30667305, g: 0, b: 0.234, a: 1}
+      startAngle: 90
+      angle: 90
+    - hitpoint: 0
+      color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      startAngle: 180
+      angle: 90
+    - hitpoint: 3
+      color: {r: 0.30667305, g: 0, b: 0.234, a: 1}
+      startAngle: 270
+      angle: 90
+  - rotationSpeed: 175
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    curveSpeedDivider: 2.5
+    blocks:
+    - hitpoint: 5
+      color: {r: 1, g: 0.49244177, b: 0, a: 1}
+      startAngle: 0
+      angle: 90
+    - hitpoint: 5
+      color: {r: 1, g: 0, b: 0.24949217, a: 1}
+      startAngle: 90
+      angle: 90
+    - hitpoint: 5
+      color: {r: 1, g: 0.8467263, b: 0, a: 1}
+      startAngle: 180
+      angle: 90
+    - hitpoint: 5
+      color: {r: 0, g: 1, b: 0.5850754, a: 1}
+      startAngle: 270
+      angle: 90
+  - rotationSpeed: 350
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.0041656494
+        value: 0.0041389465
+        inSlope: 1.9613717
+        outSlope: 1.9613717
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.5124911
+        value: 1.0011541
+        inSlope: -0.02540493
+        outSlope: -0.02540493
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1.0071106
+        value: 0.0058898926
+        inSlope: -2.0121815
+        outSlope: -2.0121815
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    curveSpeedDivider: 10
+    blocks:
+    - hitpoint: 3
+      color: {r: 0, g: 1, b: 0.9905875, a: 1}
+      startAngle: 0
+      angle: 72
+    - hitpoint: 3
+      color: {r: 0, g: 0.4986515, b: 1, a: 1}
+      startAngle: 72
+      angle: 72
+    - hitpoint: 3
+      color: {r: 1, g: 0, b: 0.24949217, a: 1}
+      startAngle: 144
+      angle: 72
+    - hitpoint: 3
+      color: {r: 1, g: 0.8467263, b: 0, a: 1}
+      startAngle: 216
+      angle: 72
+    - hitpoint: 3
+      color: {r: 0, g: 1, b: 0.5850754, a: 1}
+      startAngle: 288
+      angle: 72
+  tutorialTexts: []

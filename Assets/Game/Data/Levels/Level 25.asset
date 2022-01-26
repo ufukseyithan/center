@@ -1,0 +1,168 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b67d8dd830bed1e46a90dffa5e80609a, type: 3}
+  m_Name: Level 25
+  m_EditorClassIdentifier: 
+  ballCount: 55
+  layers:
+  - rotationSpeed: 100
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    curveSpeedDivider: 1
+    blocks:
+    - hitpoint: 4
+      color: {r: 1, g: 0.8467263, b: 0, a: 1}
+      startAngle: 0
+      angle: 120
+    - hitpoint: 4
+      color: {r: 1, g: 0, b: 0.24949217, a: 1}
+      startAngle: 120
+      angle: 120
+    - hitpoint: 4
+      color: {r: 0, g: 0.4986515, b: 1, a: 1}
+      startAngle: 240
+      angle: 120
+  - rotationSpeed: 180
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    curveSpeedDivider: 1
+    blocks:
+    - hitpoint: 5
+      color: {r: 1, g: 0.49244177, b: 0, a: 1}
+      startAngle: 0
+      angle: 120
+    - hitpoint: 0
+      color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      startAngle: 120
+      angle: 60
+    - hitpoint: 5
+      color: {r: 1, g: 0, b: 0.6922989, a: 1}
+      startAngle: 240
+      angle: 120
+  - rotationSpeed: -280
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    curveSpeedDivider: 1
+    blocks:
+    - hitpoint: 7
+      color: {r: 0, g: 1, b: 0.9905875, a: 1}
+      startAngle: 0
+      angle: 180
+    - hitpoint: 7
+      color: {r: 0.30667305, g: 0, b: 0.234, a: 1}
+      startAngle: 180
+      angle: 90
+    - hitpoint: 7
+      color: {r: 1, g: 0.8467263, b: 0, a: 1}
+      startAngle: 270
+      angle: 90
+  - rotationSpeed: -220
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    curveSpeedDivider: 1
+    blocks:
+    - hitpoint: 6
+      color: {r: 1, g: 0, b: 0.6922989, a: 1}
+      startAngle: 0
+      angle: 200
+  tutorialTexts: []
+  layerCount: 0
+  grayBlockCount: 0
+  colors: []
