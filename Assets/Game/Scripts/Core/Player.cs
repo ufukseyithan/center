@@ -22,10 +22,10 @@ namespace Game.Core {
         float ballThrowSpeed = 10;
         [Tooltip("The scale of the spare ball.")]
         [SerializeField]
-        Vector2 ballScale = new Vector2(.1f, .1f);
+        Vector3 ballScale = new Vector3(.1f, .1f, .1f);
         [Tooltip("The scale of the held ball.")]
         [SerializeField]
-        Vector2 finalBallScale = new Vector2(.2f, .2f);
+        Vector3 finalBallScale = new Vector3(.2f, .2f, .2f);
 
         [SerializeField]
         int ballCount;
@@ -71,7 +71,7 @@ namespace Game.Core {
 
             spareBallObject = Instantiate(ballPrefab, ballLocation);
             spareBallObject.transform.localScale = Vector3.zero;
-            spareBallObject.transform.DOScale(new Vector3(ballScale.x, ballScale.y, 1), .33f);
+            spareBallObject.transform.DOScale(new Vector3(ballScale.x, ballScale.y, ballScale.z), .33f);
 
             Ball spareBall = spareBallObject.GetComponent<Ball>();
 
@@ -85,7 +85,7 @@ namespace Game.Core {
 
             spareBallObject.transform.DOKill(true);
             spareBallObject.transform.DOMoveX(0, .33f);
-            spareBallObject.transform.DOScale(new Vector3(finalBallScale.x, finalBallScale.y, 1), .33f);
+            spareBallObject.transform.DOScale(new Vector3(finalBallScale.x, finalBallScale.y, finalBallScale.z), .33f);
 
             heldBallObject = spareBallObject;
 
@@ -100,9 +100,9 @@ namespace Game.Core {
 
             heldBallObject.transform.DOKill(true);
 
-            Rigidbody2D ballRigidbody = heldBallObject.GetComponent<Rigidbody2D>();
+            Rigidbody ballRigidbody = heldBallObject.GetComponent<Rigidbody>();
 
-            ballRigidbody.AddForce(Vector2.up * ballThrowSpeed, ForceMode2D.Impulse);
+            ballRigidbody.AddForce(Vector2.up * ballThrowSpeed, ForceMode.Impulse);
             heldBallObject.transform.SetParent(transform.parent);
 
             BallCount--;

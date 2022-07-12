@@ -5,32 +5,33 @@ namespace Game.Core {
     public class Ball : MonoBehaviour {
         public Player player;
 
-        SpriteRenderer spriteRenderer;
+        MeshRenderer meshRenderer;
         TrailRenderer trailRenderer;
 
         Color color;
 
         public Color Color {
-            get => spriteRenderer.color;
+            get => meshRenderer.material.color;
             set {
-                spriteRenderer.color = value;
+                meshRenderer.material.color = value;
                 trailRenderer.material.color = value;
             }
         }
 
         void Awake() {
-            spriteRenderer = GetComponent<SpriteRenderer>();
+            meshRenderer = GetComponent<MeshRenderer>();
             trailRenderer = GetComponent<TrailRenderer>();
         }
 
-        void OnTriggerEnter2D() {
+        
+        void OnTriggerEnter() {
             Destroy(gameObject);
             GameManager.Instance.BeatLevel();
         }
 
-        void OnCollisionEnter2D(Collision2D collision) {
+        void OnCollisionEnter(Collision collision) {
             if (collision.gameObject.TryGetComponent<Block>(out Block block)) {
-                if (spriteRenderer.color == Color.white || spriteRenderer.color == block.GetComponent<LineRenderer>().startColor)
+                if ( meshRenderer.material.color == Color.white ||  meshRenderer.material.color == block.GetComponent<LineRenderer>().startColor)
                     if (block.Damage())
                         player.StartCheckCurrentBallColorsCoroutine();
 

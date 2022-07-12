@@ -1,6 +1,8 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.UI;
 
 namespace Game.Core {
     public class Level : MonoBehaviour {
@@ -22,7 +24,7 @@ namespace Game.Core {
         public void Initiate() {
             GameManager.Instance.inGame.EnableWatchAdButton();
             
-            portal.DOScale(new Vector2(.5f, .5f), .5f).OnComplete(() => {
+            portal.DOScale(new Vector3(.5f, .5f, .5f), .5f).OnComplete(() => {
                 player.BallCount = data.ballCount;
 
                 for (int i = 0; i < data.layers.Length; i++) {
@@ -30,7 +32,7 @@ namespace Game.Core {
                     layers[i].transform.rotation = Quaternion.identity;
                     layers[i].rotationSpeed = data.layers[i].rotationSpeed;
                     layers[i].curve = data.layers[i].curve;
-                    layers[i].curveSpeedDivider = data.layers[i].curveSpeedDivider;
+                    layers[i].curveSpeedDivider  = data.layers[i].curveSpeedDivider;
 
                     foreach (Data.Block blockData in data.layers[i].blocks) {
                         GameObject blockObject = Instantiate(blockPrefab, layers[i].transform);
@@ -66,16 +68,25 @@ namespace Game.Core {
 
                         lineRenderer.SetPositions(array);
 
-                        EdgeCollider2D edgeCollider = blockObject.GetComponent<EdgeCollider2D>();
+                        MeshCollider meshCollider = blockObject.GetComponent<MeshCollider>();
 
-                        edgeCollider.points = Array.ConvertAll(array, element => (Vector2) element);
+                        //edgeCollider.points = Array.ConvertAll(array, element => (Vector2) element);
+
+                        MeshFilter meshFilter = blockObject.GetComponent<MeshFilter>();
+
+                        Mesh mesh = new Mesh();
+                        meshFilter.mesh = mesh;
+                        meshCollider.sharedMesh = mesh;
+                        lineRenderer.BakeMesh(mesh);
+
+                        lineRenderer.enabled = false;
                     }
                 }
 
                 player.Initiate();
             });
         }
-
+        
         public void Restart() {
             Cease();
 
@@ -86,8 +97,8 @@ namespace Game.Core {
             DestroyBlocks();
             DisableLayers();
             DestroyBalls();
-            
-            portal.DOScale(new Vector2(15f, 15f), .5f);
+
+            portal.DOScale(new Vector3(15f, 15f, 15f), .5f);
         }
 
         void DisableLayers() {
